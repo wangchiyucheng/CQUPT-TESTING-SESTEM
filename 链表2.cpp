@@ -17,7 +17,7 @@ int main()
     struct node *head = NULL, *p1, *p2;
     p1 = p2 = (struct node*)malloc(SIZE);
     printf("Input %d node data:\n", n + 1);
-    scanf("%d%f", &p1->num, &p1->score);
+    scanf("%d %f", &p1->num, &p1->score);
     while (p1->num != 0)
     {              
         if (++n == 1)
@@ -27,7 +27,7 @@ int main()
         p2 = p1;
         p1 = (struct node*)malloc(SIZE);
         printf("Input %d node data:\n", n + 1);
-        scanf("%d%f", &p1->num, &p1->score);
+        scanf("%d %f", &p1->num, &p1->score);
     }
     free(p1);
     printf("Prit list:\n");
